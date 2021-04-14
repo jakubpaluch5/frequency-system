@@ -17,7 +17,7 @@
             <div id="login-left-side">
                 <div id="login-left-side-column">
                     <div id="top-side">
-                        <img id="logo" src="logo.png" alt="freq-logo">
+                        <img id="logo" class="pozdr" src="logo.png" alt="freq-logo">
                     </div>
                     <div id="mid-side">
                         <ul>
