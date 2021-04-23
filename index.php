@@ -17,7 +17,7 @@
             <div id="login-left-side">
                 <div id="login-left-side-column">
                     <div id="top-side">
-                        <img id="logo" class="pozdr" src="logo.png" alt="freq-logo">
+                        <img id="logo" src="logo.png" alt="freq-logo">
                     </div>
                     <div id="mid-side">
                         <ul>
@@ -29,9 +29,9 @@
                         </ul>
                     </div>
                     <div id="bot-side">
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab facebook fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab instagram fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab twitter fa-twitter-square"></i></a>
                     </div>
                     <div id="copyright-side">
                         <h4>©JPcollab</h4>

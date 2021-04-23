@@ -9,7 +9,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   #big-desktop-container {
     background-image: url("blur-back.png");
     background-repeat: no-repeat;
@@ -46,6 +46,62 @@ body {
     width: 50%;
     position: relative;
   }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    position: relative;
+  }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container .navigation-tab {
+    width: 100%;
+    height: 50px;
+    background: #5179b5;
+    background: -webkit-gradient(linear, left top, right top, from(#5179b5), color-stop(14%, #6589bd), color-stop(36%, #7292c1), color-stop(71%, #4770b0), color-stop(74%, #436fae), color-stop(85%, #4770b0));
+    background: linear-gradient(90deg, #5179b5 0%, #6589bd 14%, #7292c1 36%, #4770b0 71%, #436fae 74%, #4770b0 85%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fffdfd;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 17px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container .login-tab {
+    background: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: gray;
+    z-index: 1;
+  }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container .about-tab {
+    border-bottom-right-radius: 30px;
+    -webkit-box-shadow: 7px 6px 11px -2px rgba(0, 0, 0, 0.39);
+    box-shadow: 7px 6px 11px -2px rgba(0, 0, 0, 0.39);
+  }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container .register-tab {
+    border-bottom-left-radius: 30px;
+    -webkit-box-shadow: -5px 7px 11px -2px rgba(0, 0, 0, 0.39);
+    box-shadow: -5px 7px 11px -2px rgba(0, 0, 0, 0.39);
+  }
+  #big-desktop-container #login-container #login-right-side #login-right-side-register-container .register-tab:hover {
+    cursor: pointer;
+    color: red;
+  }
   #big-desktop-container #login-container #login-right-side #login-right-side-header {
     width: 100%;
     height: 30%;
@@ -66,12 +122,13 @@ body {
   }
   #big-desktop-container #login-container #login-right-side #login-right-side-form {
     width: 100%;
-    height: 60%;
+    height: 50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
   #big-desktop-container #login-container #login-right-side #login-right-side-form h1 {
+    font-size: 35px;
     color: #858585;
   }
   #big-desktop-container #login-container #login-right-side #login-right-side-form h6 {
@@ -233,7 +290,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   #big-desktop-container {
     display: none;
   }
