@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register-style.css">
     <script src="https://kit.fontawesome.com/c22f07ca69.js" crossorigin="anonymous"></script>
-    <title>Portal FREQ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="shortcut-icon.png" />
+    <title>Portal FREQ | Rejestracja</title>
 </head>
 <body>
     <div id="big-desktop-container">
-        <div id="login-container">
-            <div id="login-left-side">
-                <div id="login-left-side-column">
+        <div id="register-container">
+            <div id="register-left-side">
+                <div id="register-left-side-column">
                     <div id="top-side">
                         <img id="logo" src="logo.png" alt="freq-logo">
                     </div>
@@ -38,24 +39,29 @@
                     </div>
                 </div>
             </div>
-            <div id="login-right-side">
-                <div id="login-right-side-header">
-                    <h1>Załóż konto!</h1>
+            <div id="register-right-side">
+                <div id="register-right-side-register-container">
+                    <div class="navigation-tab about-tab">O serwisie</div>
+                    <div class="navigation-tab login-tab">Logowanie</div>
+                    <div class="navigation-tab register-tab">Rejestracja</div>
                 </div>
-                <div id="login-right-side-form">
+                <div id="register-right-side-header">
+                    <h1>Załóż konto</h1>
+                </div>
+                <div id="register-right-side-form">
                     <form action="index.php" method="post">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i class="fas icons fa-user-circle"></i></span>
                             </div>
-                            <input placeholder="Login..." type="text" name="login" class="form-control"
+                            <input placeholder="Login..." onblur="login_validate()" type="text" name="login" id="login_field" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-at"></i></span>
                             </div>
-                            <input placeholder="E-mail..." type="text" name="password" class="form-control"
+                            <input placeholder="Adres e-mail..." type="text" name="email" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <div class="input-group mb-3">
@@ -67,7 +73,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
                             </div>
                             <input placeholder="Powtórz hasło..." type="text" name="password" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
@@ -76,10 +82,10 @@
                     </form>
                     <div id="fail"></div>
                    
-                    <h6>Nie masz konta? To nie problem! <span>Kliknij tutaj</span> aby je szybko i bezpłatnie założyć!
+                    <h6>Masz już konto? <span>Kliknij tutaj</span> aby się zalogować!
                     </h6>
                 </div>
-                <div id="login-right-side-footer">
+                <div id="register-right-side-footer">
                     <ul>
                         <li>Regulamin</li>
                     </ul>
@@ -91,11 +97,11 @@
         </div>
     </div>
     <div id="big-mobile-container">
-        <div id="mobile-login-container">
+        <div id="mobile-register-container">
             <div id="mobile-logo-img">
                 <img src="logo.png" alt="mobile-logo">
             </div>
-            <div id="mobile-login">
+            <div id="mobile-register">
                 <h1 class="text-center">Zaloguj się!</h1>
                 <form action="index.php" method="post">
                     <div class="input-group mb-3">
@@ -128,6 +134,7 @@
             </div>
         </div>
     </div>
+    <script src="register-validation.js"></script>
 </body>
 
 </html>
