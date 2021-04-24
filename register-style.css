@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;1,100&display=swap");
+body {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+@media screen and (min-width: 1100px) {
+  #big-desktop-container {
+    background-image: url("blur-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #register-container {
+    width: 60vw;
+    background-color: white;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    position: relative;
+    -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #register-container #register-right-side {
+    width: 50%;
+    position: relative;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    position: relative;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .navigation-tab {
+    width: 100%;
+    height: 50px;
+    background: #5179b5;
+    background: -webkit-gradient(linear, left top, right top, from(#5179b5), color-stop(14%, #6589bd), color-stop(36%, #7292c1), color-stop(71%, #4770b0), color-stop(74%, #436fae), color-stop(85%, #4770b0));
+    background: linear-gradient(90deg, #5179b5 0%, #6589bd 14%, #7292c1 36%, #4770b0 71%, #436fae 74%, #4770b0 85%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fffdfd;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 17px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .register-tab {
+    background: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: gray;
+    z-index: 1;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .about-tab {
+    -webkit-box-shadow: 2px 9px 15px -7px rgba(0, 0, 0, 0.56);
+    box-shadow: 2px 9px 15px -7px rgba(0, 0, 0, 0.56);
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .login-tab {
+    --webkit-box-shadow: 4px 5px 19px -5px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 4px 5px 19px -5px rgba(0, 0, 0, 0.66);
+            box-shadow: 4px 5px 19px -5px rgba(0, 0, 0, 0.66);
+    border-bottom-right-radius: 30px;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .login-tab:hover {
+    cursor: pointer;
+    color: red;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-register-container .about-tab:hover {
+    cursor: pointer;
+    color: red;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-header {
+    width: 100%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-header h1 {
+    color: #858585;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form {
+    width: 100%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form h1 {
+    font-size: 35px;
+    color: #858585;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form h6 {
+    font-size: 14px;
+    padding: 25px;
+    line-height: 25px;
+    color: #858585;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form h6 span {
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .error::-webkit-input-placeholder {
+    color: #ce4343;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .error {
+    color: #ce4343;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .right {
+    color: #2cbb2c;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .rightInputBorder {
+    border-top: 2px solid #2cbb2c;
+    border-right: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .errorInputBorder {
+    border-top: 2px solid #ce4343;
+    border-right: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .successSpanIcon {
+    border-top: 2px solid #2cbb2c;
+    border-left: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form .errorSpanIcon {
+    border-top: 2px solid #ce4343;
+    border-left: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-footer {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-footer ul {
+    padding: 20px;
+    text-decoration: none;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-footer ul li {
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+    color: #f07171;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-footer ul li:hover {
+    color: red;
+  }
+  #big-desktop-container #register-container #register-right-side .input-group {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+  }
+  #big-desktop-container #register-container #register-right-side button {
+    height: 40px;
+    width: 80%;
+  }
+  #big-desktop-container #register-container #register-left-side {
+    width: 50%;
+    height: 700px;
+    background-image: url("back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #top-side {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #top-side #logo {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #mid-side {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30%;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #mid-side li {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #f6f6f6;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #bot-side {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #bot-side a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #bot-side a i {
+    font-size: 60px;
+    color: #dde3e6;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #bot-side a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #bot-side a:hover i:hover {
+    color: white;
+  }
+  #big-desktop-container #register-container #register-left-side #register-left-side-column #copyright-side {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #big-desktop-container {
+    display: none;
+  }
+  #big-mobile-container {
+    background-image: url("blur-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-mobile-container #mobile-register-container {
+    width: 80vw;
+    height: 90%;
+    position: relative;
+  }
+  #big-mobile-container #mobile-register-container #mobile-logo-img {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-mobile-container #mobile-register-container #mobile-logo-img img {
+    width: 150px;
+    height: 150px;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register {
+    width: 100%;
+    height: 60%;
+    margin-top: 40px;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register h4 {
+    color: white;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register ul {
+    padding-top: 30px;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register h1 {
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register button {
+    width: 100%;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register h6 {
+    padding-top: 20px;
+    color: white;
+  }
+  #big-mobile-container #mobile-register-container #mobile-register h6 span {
+    color: #730404;
+  }
+}
+/*# sourceMappingURL=register-style.css.map */
