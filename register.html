@@ -59,23 +59,23 @@
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i class="fas icons fa-at"></i></span>
                             </div>
-                            <input placeholder="Adres e-mail..." type="text" name="email" class="form-control"
+                            <input placeholder="Adres e-mail..." type="text" onblur="email_validate()" id="email_field"  name="email" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i class="fas icons fa-key"></i></span>
                             </div>
-                            <input placeholder="Hasło..." type="text" name="password" class="form-control"
+                            <input placeholder="Hasło..." type="password" name="password" onblur="password_validate()" id="password_field" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-check-double"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i class="fas icons fa-check-double"></i></span>
                             </div>
-                            <input placeholder="Powtórz hasło..." type="text" name="password" class="form-control"
+                            <input placeholder="Powtórz hasło..." type="password" name="ConfirmPassword" id="ConfirmPassword_field" onblur="ConfirmPassword_validate()" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <button type="submit" name="submit" class="btn btn-info">Zarejestruj</button>
@@ -134,7 +134,10 @@
             </div>
         </div>
     </div>
-    <script src="register-validation.js"></script>
+    <script src="login-validation.js"></script>
+    <script src="email-validation.js"></script>
+    <script src="password-validation.js"></script>
+    <script src="ConfirmPassword-validation.js"></script>
 </body>
 
 </html>

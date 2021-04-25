@@ -148,6 +148,7 @@ body {
   }
   #big-desktop-container #register-container #register-right-side #register-right-side-form .error::-webkit-input-placeholder {
     color: #ce4343;
+    font-size: 15px;
   }
   #big-desktop-container #register-container #register-right-side #register-right-side-form .error {
     color: #ce4343;
