@@ -50,7 +50,7 @@
                     <h1>Załóż konto</h1>
                 </div>
                 <div id="register-right-side-form">
-                    <form id="form">
+                    <form id="form" method="post" action="register.php" onsubmit="return validate();">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text inputSpanIcon"><i
@@ -78,20 +78,81 @@
                                 <span class="input-group-text inputSpanIcon"><i
                                         class="fas icons fa-check-double"></i></span>
                             </div>
-                            <input placeholder="Powtórz hasło..." type="password" name="ConfirmPassword"
+                            <input placeholder="Powtórz hasło..." type="password" name="passwordtwo"
                                 id="ConfirmPassword_field" onblur="ConfirmPassword_validate()" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
-                        <button type="submit" id="button"  name="submit"  class="btn btn-info">Zarejestruj</button>
+                        <button type="submit" id="button" name="submit" class="btn btn-info">Zarejestruj</button>
                     </form>
-                    <div id="fail"></div>
-
-                    <h6>Masz już konto? <span>Kliknij tutaj</span> aby się zalogować!
-                    </h6>
+                    <?php
+                        if( isset( $_POST['submit'] ) )
+                        {
+                            $servername = "localhost";
+                            $username = "root";
+                            $password = "";
+                            $dbname = "freq";
+                            $conn = mysqli_connect($servername, $username, $password, $dbname);
+                            if (!$conn)
+                            {
+                                die("Nie udało się: " . mysqli_connect_error());
+                            }
+                            $login = $_POST['login'];
+                            $email = $_POST['email'];
+                            $password = $_POST['password'];
+                            $passwordtwo = $_POST['passwordtwo'];
+                            $duplicatelogin=mysqli_query($conn,"select * from users where login='$login'");
+                            $duplicatemail=mysqli_query($conn,"select * from users where email='$email'");
+                            $min = strlen($password);
+                            $uppercase = preg_match('@[A-Z]@', $password);
+                            $lowercase = preg_match('@[a-z]@', $password);
+                            $number    = preg_match('@[0-9]@', $password);
+                            $specialChars = preg_match('@[^\w]@', $password);
+                            if(empty($login)) 
+                            {
+                                echo '<p class="text-danger">Login nie może być pusty!</p>';
+                            }
+                            elseif($password != $passwordtwo)
+                            {
+                                echo '<p class="text-danger">Hasła muszą się zgadzać!</p>';
+                            }
+                            elseif(!$uppercase || !$lowercase || !$number || !$specialChars || $min < 8)
+                            {
+                                echo '<p class="text-danger">Hasło musi spełniać wymogi!</p>';
+                            }
+                            elseif(mysqli_num_rows($duplicatemail)>0)
+                            {
+                                echo '<p class="text-danger">Na ten e-mail jest już założone konto!</p>';
+                            }
+                            elseif(mysqli_num_rows($duplicatelogin)>0)
+                            {  
+                                echo '<p class="text-danger">Login już istnieje!</p>';
+                            } 
+                            else
+                            {
+                            $curr = time();
+                            $pepper = 'p3pp37';
+                            $strongpassword = $password.$curr.$pepper;
+                            $hashedpassword = hash('sha512', $strongpassword);
+                            $sql = "INSERT INTO users (login, email, password, time) VALUES ('$login', '$email', '$hashedpassword', '$curr')";
+                            if (mysqli_query($conn, $sql))
+                            {
+                                echo '<script>';
+                                echo 'window.location = "index.php";';
+                                echo '</script>';
+                            }
+                            else
+                            {
+                                echo "Nie udało się zalogować: " . $sql . "<br>" . mysqli_error($conn);
+                            }
+                            }
+                            mysqli_close($conn);
+                        }
+                    ?>
+                    <h6>Masz już konto? <span>Kliknij tutaj</span> aby się zalogować!</h6>
                 </div>
                 <div id="register-right-side-footer">
                     <ul>
-                        <li>Regulamin</li>
+                        <li>Wymogi hasła</li>
                     </ul>
                     <ul>
                         <li>Zapomniałem hasła</li>
@@ -124,7 +185,6 @@
                     </div>
                     <button type="submit" name="submit" class="btn btn-info">Zaloguj</button>
                 </form>
-
                 <h6>Nie masz konta? To nie problem! <span>Kliknij tutaj</span> aby je szybko i bezpłatnie założyć!
                     <ul>
                         <li>Statystyki w jednym miejscu</li>
@@ -134,16 +194,15 @@
                         <li>I wiele więcej!</li>
                     </ul>
                     <h4 class="text-center">©JPcollab</h4>
-
             </div>
         </div>
     </div>
-    <script src="login-validation.js"></script>
-    <script src="email-validation.js"></script>
-    <script src="password-validation.js"></script>
-    <script src="ConfirmPassword-validation.js"></script>
-    <script src="form-validation.js"></script>
-    
+    <script src="./js-form-validation/login-validation.js"></script>
+    <script src="./js-form-validation/email-validation.js"></script>
+    <script src="./js-form-validation/password-validation.js"></script>
+    <script src="./js-form-validation/ConfirmPassword-validation.js"></script>
+    <script src="./js-form-validation/form-validation.js"></script>
+
 </body>
 
 </html>

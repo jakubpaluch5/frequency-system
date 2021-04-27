@@ -15,7 +15,7 @@ body
 @media screen and (min-width: $desktop) {
 #big-desktop-container
 {
-    background-image: url('blur-back.png');
+    background-image: url('./img/blur-back.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,12 +91,12 @@ box-shadow: 2px 9px 15px -7px rgba(0,0,0,0.56);
                                         .login-tab:hover
                                         {
                                             cursor: pointer;
-                                            color: red;
+                                            color: rgb(218, 218, 218);
                                         }
                                         .about-tab:hover
                                         {
                                             cursor: pointer;
-                                            color: red;
+                                            color: rgb(218, 218, 218);
                                         }
                                         
                                 }
@@ -119,7 +119,7 @@ box-shadow: 2px 9px 15px -7px rgba(0,0,0,0.56);
                                 {
                                     
                                     width:100%;
-                                    height:60%;
+                                    height:65%;
                                     margin-left: auto;
                                     margin-right: auto;
                                     text-align: center;
@@ -128,12 +128,12 @@ box-shadow: 2px 9px 15px -7px rgba(0,0,0,0.56);
                                                     font-size: 35px;
                                                     color: rgb(133, 133, 133);
                                                 }
-                                        h6
-                                        {
-                                            font-size: 14px;
-                                            padding: 25px;
-                                            line-height:25px;
-                                            color: rgb(133, 133, 133);
+                                                h6
+                                                {
+                                                    font-size: 14px;
+                                                    padding: 25px;
+                                                    line-height:25px;
+                                                    color: rgb(133, 133, 133);
                                                 span 
                                                 {
                                                     color: red;
@@ -191,7 +191,7 @@ box-shadow: 2px 9px 15px -7px rgba(0,0,0,0.56);
                                 #register-right-side-footer
                                 {
                                     width:100%;
-                                    height:10%;
+                                    height:5%;
                                     display: flex;
                                     flex-flow: row;
                                     justify-content: center;
@@ -232,7 +232,7 @@ box-shadow: 2px 9px 15px -7px rgba(0,0,0,0.56);
                         {
                             width:50%;
                             height:700px;
-                            background-image: url('back.png');
+                            background-image: url('./img/back.png');
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-position:center;
