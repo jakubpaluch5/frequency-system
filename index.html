@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="shortcut-icon.png" />
     <title>Portal FREQ | Logowanie</title>
 </head>
+
 <body>
     <div id="big-desktop-container">
         <div id="login-container">
@@ -43,7 +44,7 @@
                 <div id="login-right-side-register-container">
                     <div class="navigation-tab about-tab">O serwisie</div>
                     <div class="navigation-tab login-tab">Logowanie</div>
-                    <div onclick="window.location='register.html';" class="navigation-tab register-tab">Rejestracja</div>
+                    <div onclick="window.location='register.php';" class="navigation-tab register-tab">Rejestracja</div>
                 </div>
                 <div id="login-right-side-header">
                     <h1>Zaloguj się!</h1>
@@ -52,22 +53,24 @@
                     <form action="index.php" method="post">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i
+                                        class="fas icons fa-user-circle"></i></span>
                             </div>
-                            <input placeholder="Adres e-mail..." type="text" name="email" class="form-control"
-                                aria-label="Amount (to the nearest dollar)">
+                            <input placeholder="Login..." type="text" id="login_field" onblur="signin_login_validate()"
+                                name="login" class="form-control" aria-label="Amount (to the nearest dollar)">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                <span class="input-group-text inputSpanIcon"><i class="fas icons fa-key"></i></span>
                             </div>
-                            <input placeholder="Hasło..." type="text" name="password" class="form-control"
+                            <input placeholder="Hasło..." type="text" id="password_field" name="password"
+                                onblur="signin_password_validate()" class="form-control"
                                 aria-label="Amount (to the nearest dollar)">
                         </div>
                         <button type="submit" name="submit" class="btn btn-info">Zaloguj</button>
                     </form>
                     <div id="fail"></div>
-                   
+
                     <h6>Nie masz konta? To nie problem! <span>Kliknij tutaj</span> aby je szybko i bezpłatnie założyć!
                     </h6>
                 </div>
@@ -82,7 +85,7 @@
             </div>
         </div>
     </div>
-    <div id="big-mobile-container">
+    <!-- <div id="big-mobile-container">
         <div id="mobile-login-container">
             <div id="mobile-logo-img">
                 <img src="logo.png" alt="mobile-logo">
@@ -119,7 +122,9 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
+    <script src="./js-signin-form-validation/signin-login-validate.js"></script>
+    <script src="./js-signin-form-validation/signin-password-validate.js"></script>
 </body>
 
 </html>

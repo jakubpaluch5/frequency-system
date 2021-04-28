@@ -93,7 +93,7 @@ body {
     box-shadow: 2px 9px 15px -7px rgba(0, 0, 0, 0.56);
   }
   #big-desktop-container #register-container #register-right-side #register-right-side-register-container .login-tab {
-    --webkit-box-shadow: 4px 5px 19px -5px rgba(0,0,0,0.66);
+    --webkit-box-shadow: 4px 5px 19px -5px rgba(0, 0, 0, 0.66);
     -webkit-box-shadow: 4px 5px 19px -5px rgba(0, 0, 0, 0.66);
             box-shadow: 4px 5px 19px -5px rgba(0, 0, 0, 0.66);
     border-bottom-right-radius: 30px;
@@ -141,7 +141,10 @@ body {
     line-height: 25px;
     color: #858585;
   }
-  #big-desktop-container #register-container #register-right-side #register-right-side-form h6 span {
+  #big-desktop-container #register-container #register-right-side #register-right-side-form h6 a {
+    text-decoration: none;
+  }
+  #big-desktop-container #register-container #register-right-side #register-right-side-form h6 a span {
     color: red;
     cursor: pointer;
     font-weight: bold;

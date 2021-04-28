@@ -42,8 +42,8 @@
             </div>
             <div id="register-right-side">
                 <div id="register-right-side-register-container">
-                    <div class="navigation-tab about-tab">O serwisie</div>
-                    <div class="navigation-tab login-tab">Logowanie</div>
+                    <div onclick="window.location='about.html';" class="navigation-tab about-tab">O serwisie</div>
+                    <div onclick="window.location='index.html';" class="navigation-tab login-tab">Logowanie</div>
                     <div class="navigation-tab register-tab">Rejestracja</div>
                 </div>
                 <div id="register-right-side-header">
@@ -87,15 +87,7 @@
                     <?php
                         if( isset( $_POST['submit'] ) )
                         {
-                            $servername = "localhost";
-                            $username = "root";
-                            $password = "";
-                            $dbname = "freq";
-                            $conn = mysqli_connect($servername, $username, $password, $dbname);
-                            if (!$conn)
-                            {
-                                die("Nie udało się: " . mysqli_connect_error());
-                            }
+                            include 'connect.php';
                             $login = $_POST['login'];
                             $email = $_POST['email'];
                             $password = $_POST['password'];
@@ -148,7 +140,7 @@
                             mysqli_close($conn);
                         }
                     ?>
-                    <h6>Masz już konto? <span>Kliknij tutaj</span> aby się zalogować!</h6>
+                    <h6>Masz już konto? <a href="index.html"><span> Kliknij tutaj </span></a> aby się zalogować!</h6>
                 </div>
                 <div id="register-right-side-footer">
                     <ul>
@@ -197,11 +189,11 @@
             </div>
         </div>
     </div>
-    <script src="./js-form-validation/login-validation.js"></script>
-    <script src="./js-form-validation/email-validation.js"></script>
-    <script src="./js-form-validation/password-validation.js"></script>
-    <script src="./js-form-validation/ConfirmPassword-validation.js"></script>
-    <script src="./js-form-validation/form-validation.js"></script>
+    <script src="./js-register-form-validation/login-validation.js"></script>
+    <script src="./js-register-form-validation/email-validation.js"></script>
+    <script src="./js-register-form-validation/password-validation.js"></script>
+    <script src="./js-register-form-validation/ConfirmPassword-validation.js"></script>
+    <script src="./js-register-form-validation/form-validation.js"></script>
 
 </body>
 
