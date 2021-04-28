@@ -1,0 +1,704 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+body {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+@media screen and (min-width: 1301px) {
+  #big-desktop-container {
+    background-image: url("./img/blur-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #about-container {
+    width: 60vw;
+    background-color: white;
+    height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    position: relative;
+    -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side {
+    width: 50%;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .navigation-tab {
+    width: 100%;
+    height: 50px;
+    background: #5179b5;
+    background: -webkit-gradient(linear, left top, right top, from(#5179b5), color-stop(14%, #6589bd), color-stop(36%, #7292c1), color-stop(71%, #4770b0), color-stop(74%, #436fae), color-stop(85%, #4770b0));
+    background: linear-gradient(90deg, #5179b5 0%, #6589bd 14%, #7292c1 36%, #4770b0 71%, #436fae 74%, #4770b0 85%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fffdfd;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 17px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .about-tab {
+    background: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: gray;
+    z-index: 1;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .login-tab {
+    border-bottom-left-radius: 30px;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .login-tab:hover {
+    cursor: pointer;
+    color: #cecece;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .register-tab:hover {
+    cursor: pointer;
+    color: #cecece;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content {
+    width: 100%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-photo-section {
+    width: 100%;
+    height: 50%;
+    background-image: url("./img/menu-photo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-header-section {
+    width: 80%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-header-section p:first-child {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #4f89b8;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section {
+    width: 100%;
+    height: 35%;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button {
+    width: 60%;
+    height: 30%;
+    background: #7494c3;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button span {
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button span i {
+    margin-left: 10px;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button {
+    width: 60%;
+    height: 30%;
+    background: #e9e9e8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button span {
+    color: #7494c3;
+    font-size: 20px;
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button span i {
+    margin-left: 10px;
+  }
+  #big-desktop-container #about-container #about-right-side .input-group {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+  }
+  #big-desktop-container #about-container #about-right-side button {
+    height: 40px;
+    width: 80%;
+  }
+  #big-desktop-container #about-container .error::-webkit-input-placeholder {
+    color: #ce4343;
+    font-size: 15px;
+  }
+  #big-desktop-container #about-container .error {
+    color: #ce4343;
+  }
+  #big-desktop-container #about-container .right {
+    color: #2cbb2c;
+  }
+  #big-desktop-container #about-container .rightInputBorder {
+    border-top: 2px solid #2cbb2c;
+    border-right: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #about-container .errorInputBorder {
+    border-top: 2px solid #ce4343;
+    border-right: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #about-container .successSpanIcon {
+    border-top: 2px solid #2cbb2c;
+    border-left: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #about-container .errorSpanIcon {
+    border-top: 2px solid #ce4343;
+    border-left: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #about-container #about-left-side {
+    width: 50%;
+    height: 700px;
+    background-image: url("./img/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #top-side {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #top-side #logo {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #mid-side {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30%;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #mid-side li {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #f6f6f6;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a i {
+    font-size: 60px;
+    color: #dde3e6;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a:hover i:hover {
+    color: white;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #copyright-side {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-device-width: 1025px) and (max-device-width: 1300px) {
+  #big-desktop-container {
+    background-image: url("./img/blur-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #about-container {
+    width: 60vw;
+    background-color: white;
+    height: 570px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    position: relative;
+    -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side {
+    width: 50%;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .navigation-tab {
+    width: 100%;
+    height: 50px;
+    background: #5179b5;
+    background: -webkit-gradient(linear, left top, right top, from(#5179b5), color-stop(14%, #6589bd), color-stop(36%, #7292c1), color-stop(71%, #4770b0), color-stop(74%, #436fae), color-stop(85%, #4770b0));
+    background: linear-gradient(90deg, #5179b5 0%, #6589bd 14%, #7292c1 36%, #4770b0 71%, #436fae 74%, #4770b0 85%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    color: #fffdfd;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 17px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .about-tab {
+    background: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: gray;
+    z-index: 1;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .login-tab {
+    border-bottom-left-radius: 30px;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .login-tab:hover {
+    cursor: pointer;
+    color: #cecece;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-register-container .register-tab:hover {
+    cursor: pointer;
+    color: #cecece;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content {
+    width: 100%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-photo-section {
+    width: 100%;
+    height: 45%;
+    background-image: url("./img/menu-photo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-header-section {
+    width: 80%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-header-section p:first-child {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #4f89b8;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-header-section p:nth-child(2) {
+    font-size: 15px;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section {
+    width: 100%;
+    height: 25%;
+    position: relative;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button {
+    width: 60%;
+    height: 30%;
+    background: #7494c3;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button span {
+    color: white;
+    font-size: 20px;
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button span i {
+    margin-left: 10px;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-in-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button {
+    width: 60%;
+    height: 30%;
+    background: #e9e9e8;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button span {
+    color: #7494c3;
+    font-size: 20px;
+    font-family: "Ubuntu Condensed", sans-serif;
+  }
+  #big-desktop-container #about-container #about-right-side #about-right-side-content #about-button-section #about-sign-up-button span i {
+    margin-left: 10px;
+  }
+  #big-desktop-container #about-container #about-right-side .input-group {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+  }
+  #big-desktop-container #about-container #about-right-side button {
+    height: 40px;
+    width: 80%;
+  }
+  #big-desktop-container #about-container .error::-webkit-input-placeholder {
+    color: #ce4343;
+    font-size: 15px;
+  }
+  #big-desktop-container #about-container .error {
+    color: #ce4343;
+  }
+  #big-desktop-container #about-container .right {
+    color: #2cbb2c;
+  }
+  #big-desktop-container #about-container .rightInputBorder {
+    border-top: 2px solid #2cbb2c;
+    border-right: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #about-container .errorInputBorder {
+    border-top: 2px solid #ce4343;
+    border-right: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #about-container .successSpanIcon {
+    border-top: 2px solid #2cbb2c;
+    border-left: 2px solid #2cbb2c;
+    border-bottom: 2px solid #2cbb2c;
+  }
+  #big-desktop-container #about-container .errorSpanIcon {
+    border-top: 2px solid #ce4343;
+    border-left: 2px solid #ce4343;
+    border-bottom: 2px solid #ce4343;
+  }
+  #big-desktop-container #about-container #about-left-side {
+    width: 50%;
+    height: 570px;
+    background-image: url("./img/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #top-side {
+    width: 100%;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #top-side #logo {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #mid-side {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30%;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #mid-side li {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #f6f6f6;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a {
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a i {
+    font-size: 50px;
+    color: #dde3e6;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #bot-side a:hover i:hover {
+    color: white;
+  }
+  #big-desktop-container #about-container #about-left-side #about-left-side-column #copyright-side {
+    width: 100%;
+    height: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 13px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=about-style.css.map */

@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+$main-font: 'Barlow Semi Condensed',
+sans-serif;
+$second-font: 'Ubuntu Condensed',
+sans-serif;
+// BREAKTPOINTS ------------------------------ REAKTPOINTS--------------------------------------
+$mobile-min: 320px;
+$mobile-max: 480px;
+$tablets-min: 481px;
+$tablets-max: 768px;
+$laptops-min: 769px;
+$laptops-max: 1024px;
+$desktop-min: 1025px;
+$desktop-max: 1300px;
+$large: 1301px;
+// --------------------------------------------------------------------------------------------------
+body {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
+@media screen and (min-width: 1301px) { 
+
+#big-desktop-container {
+    background-image: url('./img/blur-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #about-container {
+        width: 60vw;
+        background-color: white;
+        height: 700px;
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+        #about-right-side 
+            {
+            width: 50%;
+            position: relative;
+            #about-right-side-register-container {
+                display: flex;
+                flex-flow: row;
+                width: 100%;
+                height: 10%;
+                text-align: right;
+                position: relative;
+                .navigation-tab {
+                    width: 100%;
+                    height: 50px;
+                    background: rgb(81, 121, 181);
+                    background: linear-gradient(90deg, rgba(81, 121, 181, 1) 0%, rgba(101, 137, 189, 1) 14%, rgba(114, 146, 193, 1) 36%, rgba(71, 112, 176, 1) 71%, rgba(67, 111, 174, 1) 74%, rgba(71, 112, 176, 1) 85%);
+                    transition: 0.5s;
+                    color: rgb(255, 253, 253);
+                    justify-content: center;
+                    font-size: 17px;
+                    align-items: center;
+                    display: flex;
+                    z-index: 10;
+                    font-family: $main-font;
+                }
+                .about-tab {
+                    background: white;
+                    box-shadow: none;
+                    color: gray;
+                    z-index: 1;
+                }
+                .login-tab {
+                    border-bottom-left-radius: 30px;
+                }
+                .login-tab:hover {
+                    cursor: pointer;
+                    color: rgb(206, 206, 206);
+                }
+                .register-tab:hover {
+                    cursor: pointer;
+                    color: rgb(206, 206, 206);
+                }
+            }
+            #about-right-side-content {
+                width: 100%;
+                height: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                #about-photo-section {
+                    width: 100%;
+                    height: 50%;
+                    background-image: url('./img/menu-photo.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                #about-header-section {
+                    width: 80%;
+                    height: 30%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    p:first-child {
+                        font-size: 20px;
+                        font-weight: 400;
+                        font-family: $second-font;
+                        color: rgb(79, 137, 184);
+                    }
+                }
+                #about-button-section {
+                    width: 100%;
+                    height: 35%;
+                    position: relative;
+                    #about-sign-in-button {
+                        width: 60%;
+                        height: 30%;
+                        background: #7494c3;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        -moz-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        span {
+                            color: white;
+                            font-size: 20px;
+                            font-family: $second-font;
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    #about-sign-in-button:hover {
+                        cursor: pointer;
+                        transform: scale(0.95);
+                        box-shadow: none;
+                        transition: 0.4s;
+                    }
+                    #about-sign-up-button:hover {
+                        cursor: pointer;
+                        transform: scale(0.95);
+                        box-shadow: none;
+                        transition: 0.4s;
+                    }
+                    #about-sign-up-button {
+                        width: 60%;
+                        height: 30%;
+                        background: rgb(233, 233, 232);
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-radius: 30px;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 3%;
+                        align-items: center;
+                        span {
+                            color: #7494c3;
+                            font-size: 20px;
+                            font-family: $second-font;
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                        -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        -moz-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                    }
+                }
+            }
+
+            .input-group {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                height: 60px;
+            }
+            button {
+                height: 40px;
+                width: 80%;
+            }
+        }
+        .error::-webkit-input-placeholder {
+            color: rgb(206, 67, 67);
+            font-size: 15px;
+        }
+        .error {
+            color: rgb(206, 67, 67);
+
+        }
+        .right {
+            color: rgb(44, 187, 44);
+        }
+        .rightInputBorder {
+            border-top: 2px solid rgb(44, 187, 44);
+            border-right: 2px solid rgb(44, 187, 44);
+            border-bottom: 2px solid rgb(44, 187, 44);
+        }
+        .errorInputBorder {
+            border-top: 2px solid rgb(206, 67, 67);
+            border-right: 2px solid rgb(206, 67, 67);
+            border-bottom: 2px solid rgb(206, 67, 67);
+        }
+        .successSpanIcon {
+            border-top: 2px solid rgb(44, 187, 44);
+            border-left: 2px solid rgb(44, 187, 44);
+            border-bottom: 2px solid rgb(44, 187, 44);
+        }
+        .errorSpanIcon {
+            border-top: 2px solid rgb(206, 67, 67);
+            border-left: 2px solid rgb(206, 67, 67);
+            border-bottom: 2px solid rgb(206, 67, 67);
+        }
+        #about-left-side //---------------------------------------------------------------------section with presentation and logo
+            {
+            width: 50%;
+            height: 700px;
+            background-image: url('./img/back.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            #about-left-side-column {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                flex-flow: column;
+                #top-side {
+                    width: 100%;
+                    height: 40%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    #logo {
+                        width: 200px;
+                        height: 200px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                #mid-side {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    align-items: center;
+                    height: 30%;
+                    li {
+                        font-family: $main-font;
+                        font-weight: lighter;
+                        font-size: 20px;
+                        color: rgb(246, 246, 246);
+                    }
+                }
+                #bot-side {
+                    width: 50%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    a {
+                        text-decoration: none;
+                        transition: 0.5s;
+                        i {
+                            font-size: 60px;
+                            color: #dde3e6;
+                        }
+                    }
+                    a:hover {
+                        transform: scale(1.2);
+                        i:hover {
+                            color: white;
+                        }
+                    }
+                }
+                #copyright-side {
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+}
+
+
+@media screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max) { 
+    #big-desktop-container {
+        background-image: url('./img/blur-back.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #about-container {
+            width: 60vw;
+            background-color: white;
+            height: 570px;
+            display: flex;
+            flex-flow: row;
+            position: relative;
+            -webkit-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: -8px 9px 26px 0px rgba(0, 0, 0, 0.75);
+            #about-right-side 
+                {
+                width: 50%;
+                position: relative;
+                #about-right-side-register-container {
+                    display: flex;
+                    flex-flow: row;
+                    width: 100%;
+                    height: 10%;
+                    text-align: right;
+                    position: relative;
+                    .navigation-tab {
+                        width: 100%;
+                        height: 50px;
+                        background: rgb(81, 121, 181);
+                        background: linear-gradient(90deg, rgba(81, 121, 181, 1) 0%, rgba(101, 137, 189, 1) 14%, rgba(114, 146, 193, 1) 36%, rgba(71, 112, 176, 1) 71%, rgba(67, 111, 174, 1) 74%, rgba(71, 112, 176, 1) 85%);
+                        transition: 0.5s;
+                        color: rgb(255, 253, 253);
+                        justify-content: center;
+                        font-size: 17px;
+                        align-items: center;
+                        display: flex;
+                        z-index: 10;
+                        font-family: $main-font;
+                    }
+                    .about-tab {
+                        background: white;
+                        box-shadow: none;
+                        color: gray;
+                        z-index: 1;
+                    }
+                    .login-tab {
+                        border-bottom-left-radius: 30px;
+                    }
+                    .login-tab:hover {
+                        cursor: pointer;
+                        color: rgb(206, 206, 206);
+                    }
+                    .register-tab:hover {
+                        cursor: pointer;
+                        color: rgb(206, 206, 206);
+                    }
+                }
+                #about-right-side-content {
+                    width: 100%;
+                    height: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+                    #about-photo-section {
+                        width: 100%;
+                        height: 45%;
+                        background-image: url('./img/menu-photo.png');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                    #about-header-section {
+                        width: 80%;
+                        height: 30%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        p:first-child {
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: $second-font;
+                            color: rgb(79, 137, 184);
+                        }
+                        p:nth-child(2) {
+                            font-size: 15px;
+                        }
+                    }
+                    #about-button-section {
+                        width: 100%;
+                        height: 25%;
+                        position: relative;
+                        #about-sign-in-button {
+                            width: 60%;
+                            height: 30%;
+                            background: #7494c3;
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-radius: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                            box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                            span {
+                                color: white;
+                                font-size: 20px;
+                                font-family: $second-font;
+                                i {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                        #about-sign-in-button:hover {
+                            cursor: pointer;
+                            transform: scale(0.95);
+                            box-shadow: none;
+                            transition: 0.4s;
+                        }
+                        #about-sign-up-button:hover {
+                            cursor: pointer;
+                            transform: scale(0.95);
+                            box-shadow: none;
+                            transition: 0.4s;
+                        }
+                        #about-sign-up-button {
+                            width: 60%;
+                            height: 30%;
+                            background: rgb(233, 233, 232);
+                            margin-left: auto;
+                            margin-right: auto;
+                            border-radius: 30px;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 3%;
+                            align-items: center;
+                            span {
+                                color: #7494c3;
+                                font-size: 20px;
+                                font-family: $second-font;
+                                i {
+                                    margin-left: 10px;
+                                }
+                            }
+                            -webkit-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                            -moz-box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                            box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.75);
+                        }
+                    }
+                }
+    
+                .input-group {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 60px;
+                }
+                button {
+                    height: 40px;
+                    width: 80%;
+                }
+            }
+            .error::-webkit-input-placeholder {
+                color: rgb(206, 67, 67);
+                font-size: 15px;
+            }
+            .error {
+                color: rgb(206, 67, 67);
+    
+            }
+            .right {
+                color: rgb(44, 187, 44);
+            }
+            .rightInputBorder {
+                border-top: 2px solid rgb(44, 187, 44);
+                border-right: 2px solid rgb(44, 187, 44);
+                border-bottom: 2px solid rgb(44, 187, 44);
+            }
+            .errorInputBorder {
+                border-top: 2px solid rgb(206, 67, 67);
+                border-right: 2px solid rgb(206, 67, 67);
+                border-bottom: 2px solid rgb(206, 67, 67);
+            }
+            .successSpanIcon {
+                border-top: 2px solid rgb(44, 187, 44);
+                border-left: 2px solid rgb(44, 187, 44);
+                border-bottom: 2px solid rgb(44, 187, 44);
+            }
+            .errorSpanIcon {
+                border-top: 2px solid rgb(206, 67, 67);
+                border-left: 2px solid rgb(206, 67, 67);
+                border-bottom: 2px solid rgb(206, 67, 67);
+            }
+            #about-left-side //---------------------------------------------------------------------section with presentation and logo
+                {
+                width: 50%;
+                height: 570px;
+                background-image: url('./img/back.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: white;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                #about-left-side-column {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    flex-flow: column;
+                    #top-side {
+                        width: 100%;
+                        height: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        #logo {
+                            width: 150px;
+                            height: 150px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                    #mid-side {
+                        width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: flex;
+                        align-items: center;
+                        height: 30%;
+                        li {
+                            font-family: $main-font;
+                            font-weight: lighter;
+                            font-size: 18px;
+                            color: rgb(246, 246, 246);
+                        }
+                    }
+                    #bot-side {
+                        width: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        a {
+                            text-decoration: none;
+                            transition: 0.5s;
+                            i {
+                                font-size: 50px;
+                                color: #dde3e6;
+                            }
+                        }
+                        a:hover {
+                            transform: scale(1.2);
+                            i:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                    #copyright-side {
+                        width: 100%;
+                        height: 10%;
+                        display: flex;
+                        font-size: 13px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    
+    
+    
+    
+    }
+}
+
+
+
+// @media screen and (max-width: $mobile) {
+//     #big-desktop-container {
+//         display: none;
+//     }
+
+//     #big-mobile-container {
+//         background-image: url('blur-back.png');
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+//         width: 100vw;
+//         position: relative;
+//         height: 100vh;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         #mobile-about-container {
+//             width: 80vw;
+//             height: 90%;
+//             position: relative;
+
+//             #mobile-logo-img {
+//                 width: 100%;
+//                 height: 20%;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+
+//                 img {
+//                     width: 150px;
+//                     height: 150px;
+//                 }
+//             }
+
+//             #mobile-about {
+//                 width: 100%;
+//                 height: 60%;
+//                 margin-top: 40px;
+
+//                 h4 {
+//                     color: white;
+//                 }
+
+//                 ul {
+//                     padding-top: 30px;
+//                 }
+
+//                 h1 {
+//                     color: white;
+//                     padding-bottom: 20px;
+//                     padding-top: 20px;
+//                 }
+
+//                 button {
+//                     width: 100%;
+
+//                 }
+
+//                 h6 {
+//                     padding-top: 20px;
+//                     color: white;
+
+//                     span {
+//                         color: rgb(115, 4, 4);
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
